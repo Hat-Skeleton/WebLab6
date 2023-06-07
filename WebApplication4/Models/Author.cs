@@ -6,7 +6,9 @@
         public string Name { get; set; }
         public string Email { get; set; }
 
-        // Navigation property for the posts associated with the author
-        public List<Post> Posts { get; set; }
+        // Foreign key property for the associated post
+        public int PostId { get; set; }
+        // Navigation property for the post associated with the author
+        public Post Post { get; set; }
     }
 }
